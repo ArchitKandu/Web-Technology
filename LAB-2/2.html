@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>20051924</title>
+        <style>
+            *{
+                margin: 10px;
+                text-decoration-color: red;
+            }
+            .personal{
+                display: flex;
+                justify-content: space-between;
+            }
+            .personal__right{
+                margin: 30px;
+            }
+            fieldset{
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="submit.html">
+        <div class="container">
+        <fieldset>
+            <legend>Create User and Password</legend>
+            <label for="user">User ID: *<input type="text" name="user" id="" required></label><br><br>
+            <label for="pass">Password: *<input type="password" required></label><br>
+            <p>(Format combination of mumericals, alphabet and special character, minimum 8 and maximum 16 character)</p><br>
+            <label for="confPass">Confirm Password: *<input type="password" name="confPass" id="" required></label><br>
+        </fieldset>
+        <br><hr><br>
+        <fieldset class="personal">
+            <legend>Personal Information</legend>
+            <div class="personal__left">
+            <label for="fname">First Name: * <input type="text" required></label><br><br>
+            <label for="lname">Last name: <input type="text"></label><br><br>
+            <label for="gender">Gender: <input type="radio" name="gender"> Male  <input type="radio" name="gender">Female</label><br><br>
+            <label for="birthday">Birthday: * <input type="date" required></label><br><br>
+            <label for="country">Country
+            <select name="country" id="Country">
+                <option value="">--select country--</option>
+                <option value="">America</option>
+                <option value="">Austria</option>
+                <option value="">Brazil</option>
+                <option value="">Canada</option>
+                <option value="">Denmark</option>
+                <option value="">China</option>
+                <option value="">India</option>
+                <option value="">Bangladesh</option>
+                <option value="">Nepal</option>
+                <option value="">UAE</option>
+                <option value="">Other</option>    
+            </select></label>
+            <br><br>
+            <label for="email">Email: * <input type="email" required></label>
+            <br><br>
+            <label for="address">Address: <textarea name="" id="" cols="30" rows="10"></textarea></label>
+        </div>
+        <div class="personal__right">
+            <img src="pic.png" width="200" height="200">
+        </div>
+        </fieldset>
+        <br><hr><br>
+        <fieldset>
+            <legend>Education Details</legend>
+            <label for="degree">Degree
+            <select name="degree" id="">Degree
+                <option value="">B.E.</option>
+                <option value="">BTech</option>
+                <option value="">Bsc</option>
+                <option value="">Bcom</option>
+            </select></label>
+            <br><br>
+            <label for="course">Certified Course any: <textarea name="" id="" cols="30" rows="10"></textarea></label>
+        </fieldset>
+        <br><hr><br>
+        <fieldset>
+            <legend>Word Experience</legend>
+            <label for="knowledge">Knowledge in : <input type="checkbox">HTML <input type="checkbox" name="" id="">.NET <input type="checkbox">JAVA <input type="checkbox">PHP</label>
+        </fieldset>
+        <br><hr><br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    </body>
+</html>
